@@ -1,11 +1,11 @@
 .form-heading h5 {
-  font-size: 25px;
+  font-size: 30px;
   color: blue;
   margin: 15px;
 }
 
 .form {
-  background-color: #b1a296;
+  /* background-color: #b1a296; */
 }
 
 .form-group label {
@@ -17,6 +17,10 @@
 .form-group textarea {
   width: 500px;
   margin: 7px 15px;
+  border: 1px solid blue;
+  background-color: #b1a296;
+  font-size: 25px;
+  color: black;
 }
 
 .form-footer button {
