@@ -5,6 +5,10 @@
   font-size: 25px;
 }
 
+.card {
+  background-color: #b1a296;
+}
+
 .card-body span a {
   margin-right: 30px;
   text-decoration: none;

@@ -1,10 +1,10 @@
 <div class="container">
     <div class="form-heading">
-        <h5>Create Quote</h5>
+        <h5 class="text-success fw-bold">Create Quote</h5>
     </div>
     <!-- form to create quote -->
     <div class="form">
-        <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
+        <form (ngSubmit)='submitQuote()' #quoteForm='ngForm' id="quote-form">
             <!-- Name of quote author -->
             <div class="form-group">
                 <label for="author">Name</label>
@@ -15,8 +15,8 @@
             </div>
 
             <!-- Quote textarea -->
-            <div class="form-group">
-                <label for="quote">Quote</label>
+            <div class="form-group mt-5">
+                <label for="quote">Your Quote</label>
                 <textarea [(ngModel)]="newQuote.quote" class="form-control" id="quote" rows="4" name="quote" placeholder="Write your quote" #quote='ngModel' required></textarea>
                 <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
                     <p>Quote is required</p>

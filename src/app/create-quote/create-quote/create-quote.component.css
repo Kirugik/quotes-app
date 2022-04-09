@@ -1,9 +1,25 @@
 .form-heading h5 {
   font-size: 25px;
   color: blue;
+  margin: 15px;
+}
+
+.form {
+  background-color: #b1a296;
+}
+
+.form-group label {
+  margin-left: 15px;
+  color: blue;
 }
 
 .form-group input,
 .form-group textarea {
   width: 500px;
+  margin: 7px 15px;
+}
+
+.form-footer button {
+  font-size: 25px;
+  margin: 15px;
 }
