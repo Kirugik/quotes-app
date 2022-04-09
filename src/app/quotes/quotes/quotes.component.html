@@ -4,7 +4,7 @@
     <!-- existing quotes page -->
     <div class='quotes d-flex flex-row'>
         <div *ngFor='let quote of quotes;let delete =index' class="mb-4 d-flex align-items-stretch">
-          <div class="card mx-2" style="width: 400px; height: 250px;">
+          <div class="card mx-2" style="width: 400px; height: 300px;">
               <div class="card-body">
                 <h5 class="card-title">{{quote.author}}</h5>
                 <p class="card-text">{{quote.quote}}</p>
@@ -24,7 +24,7 @@
       </div>
     </div>
     <!-- create quote form -->
-    <div class='create-quote mt-2'>
+    <div class='create-quote'>
       <app-create-quote (addQuote)="newQuote($event)"></app-create-quote> 
     </div>
   </div>

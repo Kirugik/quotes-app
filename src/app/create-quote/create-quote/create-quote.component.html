@@ -1,65 +1,32 @@
-<!-- Create quote modal button -->
-<!-- <button 
-    type="button" 
-    class="btn btn-success" 
-    data-toggle="modal" 
-    data-target="#exampleModal">
-    <i class="fa fa-plus-square"></i>
-    Create Quote
-</button> -->
-<!-- Create quote modal -->
-<!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true"> -->
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Create Quote</h5>
-                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button> -->
-            </div>
-            <div class="modal-body">
-
-                <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
-                    <div class="form-group">
-                        <label for="author">Name</label>
-                        <input [(ngModel)]="newQuote.author" type="text" class="form-control" id="author" name="author" placeholder="Your name" #author='ngModel' required>
-                        <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
-                            <p>Name is required</p>
-                        </div>
-                    </div>
-                    <!-- <div class="form-group">
-
-                        <label for="title">Title</label>
-                        <input [(ngModel)]="newQuote.title" type="text" class="form-control" id="title" name="title" #title='ngModel' required>
-                        <div [hidden]="title.valid || title.pristine" class="alert alert-danger">
-                            <p>Title is required</p>
-                        </div>
-                    </div> -->
-                    <div class="form-group">
-
-                        <label for="quote">Quote</label>
-                        <textarea [(ngModel)]="newQuote.quote" class="form-control" id="quote" rows="4" name="quote" placeholder="Write your quote" #quote='ngModel' required></textarea>
-                        <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
-                            <p>Quote is required</p>
-                        </div>
-                    </div>
-                    <!-- <div class="form-group">
-
-                        <label for="publisher">Publisher</label>
-                        <textarea [(ngModel)]="newQuote.submitedBy" class="form-control" id="publisher" rows="4" name="publisher" #publisher='ngModel' required></textarea>
-                        <div class="alert alert-danger">
-                            <p>Publisher is required</p>
-                        </div>
-                    </div> -->
-
-                    <div class="modal-footer">
-                        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-                        <button type="submit" class="btn btn-success">Add Quote</button>
-                    </div>
-                </form>
-
-            </div>
-        </div>
+<div class="container">
+    <div class="form-heading">
+        <h5>Create Quote</h5>
     </div>
-<!-- </div> -->
+    <!-- form to create quote -->
+    <div class="form">
+        <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
+            <!-- Name of quote author -->
+            <div class="form-group">
+                <label for="author">Name</label>
+                <input [(ngModel)]="newQuote.author" type="text" class="form-control" id="author" name="author" placeholder="Your name" #author='ngModel' required>
+                <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+                    <p>Name is required</p>
+                </div>
+            </div>
+
+            <!-- Quote textarea -->
+            <div class="form-group">
+                <label for="quote">Quote</label>
+                <textarea [(ngModel)]="newQuote.quote" class="form-control" id="quote" rows="4" name="quote" placeholder="Write your quote" #quote='ngModel' required></textarea>
+                <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
+                    <p>Quote is required</p>
+                </div>
+            </div>
+
+            <!-- Add quote button -->
+            <div class="form-footer">
+                <button type="submit" class="btn btn-success">Add Quote</button>
+            </div>
+        </form>
+    </div>
+</div>
