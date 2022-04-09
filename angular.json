@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "quotes-app": {
+    "QuotesApp": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -32,7 +32,7 @@
               "src/styles.css"
             ],
             "scripts": [
-              "node_modules/bootstrap/dist/js/bootstrap.min.js" 
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
           },
           "configurations": {
@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "quotes-app:build:production"
+              "browserTarget": "QuotesApp:build:production"
             },
             "development": {
-              "browserTarget": "quotes-app:build:development"
+              "browserTarget": "QuotesApp:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "quotes-app:build"
+            "browserTarget": "QuotesApp:build"
           }
         },
         "test": {
@@ -106,5 +106,5 @@
       }
     }
   },
-  "defaultProject": "quotes-app"
-}
+  "defaultProject": "QuotesApp"
+} 

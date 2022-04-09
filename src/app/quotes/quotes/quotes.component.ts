@@ -14,7 +14,6 @@ export class QuotesComponent implements OnInit {
   isComplete= true;
 
   quotes: Quotes[]=[
-
     new Quotes(0,'Socrates','“The unexamined life is not worth living”',0,0),
     new Quotes(1,'Mark Twain','“The fear of death follows from the fear of life. A man who lives fully is prepared to die at any time.”',0,0),
     new Quotes(2,'Mahatma Gandhi','“Live as if you were to die tomorrow. Learn as if you were to live forever.”',0,0),
