@@ -1,1 +1,36 @@
-<p>quotes works!</p>
+<div class="body">
+    <div class='container-fluid'>
+      <div class='row'>
+        <div class='col-md-6'>
+          <div>
+            <app-create-quote (addQuote)="newQuote($event)"></app-create-quote> 
+           </div>
+
+        </div>
+        <div class='row col-md-6'>
+          
+            <div *ngFor='let quote of quotes;let delete =index' class="mb-4 d-flex align-items-stretch">
+              <div class="card" style="width: 40rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">{{quote.author}}</h5>
+                    <!-- <h6 class="card-subtitle mb-2">{{quote.title}}</h6> -->
+                    <p class="card-text">{{quote.quote}}</p>
+                    <!-- <span class="row">Submited By:<p>{{quote.submitedBy}}</p></span> -->
+                    <span class="rows">
+                      <a class="pr-5">
+                        <i style='color:rgb(16, 133, 26)'(click)='upVote(quote)' class="fa fa-thumbs-up"></i>{{quote.upvote}}
+                      </a>
+                      <a class="pr-5">
+                        <i style='color:red' (click)='downVote(quote)' class="fa fa-thumbs-down"></i>{{quote.downvote}}
+                      </a>
+                      <a>
+                        <i  (click)= 'quoteDelete($event,delete)' style='color:red'  class="fa fa-trash"></i>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
