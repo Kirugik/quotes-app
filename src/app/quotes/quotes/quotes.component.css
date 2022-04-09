@@ -1,5 +1,5 @@
 .main {
-  margin: 10px auto;
+  margin-top: 10px auto;
   padding: 30px;
   min-height: 300px;
   font-size: 25px;
@@ -7,6 +7,14 @@
 
 .card {
   background-color: #b1a296;
+  box-shadow: 0 4px 17px rgba(32, 94, 187, 0.35);
+  transform: translateY(-3px);
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
 }
 
 .card-body span a {
