@@ -27,10 +27,8 @@ export class QuotesComponent implements OnInit {
   newQuote(quote:any) {
     quote.id = this.getCurrentId();
     quote.author= quote.author;
-    // quote.title=quote.title;
     quote.quote=quote.quote;
-    // quote.submitedBy=quote.submitedBy;
-    this.quotes.unshift(quote)
+    this.quotes.push(quote);
   }
   upVote(quote:any){
     quote.upvote= quote.upvote+1;
