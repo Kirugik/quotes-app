@@ -1,27 +1,32 @@
-# QuotesApp
+# Quotes App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.
+This is Quotes App, an angular web application for users to read popular quotes and create new quotes.
 
-## Development server
+# By **Robert Kirui**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+April 9th, 2022.
 
-## Code scaffolding
+## Description
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+This application allows users to see quotes from famous people around the world, and also to create new quotes of their own and add them to the list of quotes currently in the application.
 
-## Build
+# Link to Live Site on GitHub Pages
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+https://kirugik.github.io/quotes-app/
 
-## Running unit tests
+# Setup/Installation
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Fork the project from this repo
+- Run git clone https://github.com/Kirugik/quotes-app.git to have the project files in your preferred directory on the local machine.
+- Open the project folder and `ng serve` to start your server.
+- Navigate to `http://localhost:4200/` where application will be running automatically.
 
-## Running end-to-end tests
+# Technologies Used
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+HTML, CSS, Bootstrap, Typescript, JavaScript, Angular version 13.
 
-## Further help
+# License
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Licensed under the [MIT License] (LICENSE).
+
+Copyright (c) 2022. **Robert Kirui**
