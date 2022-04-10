@@ -8,7 +8,8 @@
           <div class="card-body">
             <h5 class="card-title">{{quote.author}}</h5>
             <p class="card-text">{{quote.quote}}</p>
-            <span class="row">Submited By:<p>{{quote.submitedBy}}</p></span>
+            <!-- <span class="row">Submited By:<p>{{quote.submitedBy}}</p></span> -->
+            <span>Submitted by {{quote.submitedBy}} <b>{{quote.submissionDate|timePassed}} day(s) ago</b>.</span> <br> <br>
             <span class="rows">
               <a class="pr-5">
                 <i style='color:green'(click)='upVote(quote)' class="fa fa-thumbs-o-up"></i>{{quote.upvote}}

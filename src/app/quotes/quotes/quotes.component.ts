@@ -15,10 +15,10 @@ export class QuotesComponent implements OnInit {
 
   // quotes array
   quotes: Quotes[]=[
-    new Quotes(0,'Socrates','“The unexamined life is not worth living”',0,0, 'Robert'),
-    new Quotes(1,'Mark Twain','“The fear of death follows from the fear of life. A man who lives fully is prepared to die at any time.”',0,0, 'Robert'),
-    new Quotes(2,'Mahatma Gandhi','“Live as if you were to die tomorrow. Learn as if you were to live forever.”',0,0, 'Robert'),
-    new Quotes(3,'Steve Jobs','“The ones who are crazy enough to think that they can change the world, are the ones who do.”',0,0, 'Robert'), 
+    new Quotes(0,'Socrates','“The unexamined life is not worth living”',0,0, 'Robert', new Date(2022,3,10)),
+    new Quotes(1,'Mark Twain','“The fear of death follows from the fear of life. A man who lives fully is prepared to die at any time.”',0,0, 'Robert', new Date(2022,3,10)),
+    new Quotes(2,'Mahatma Gandhi','“Live as if you were to die tomorrow. Learn as if you were to live forever.”',0,0, 'Robert', new Date(2022,3,10)),
+    new Quotes(3,'Steve Jobs','“The ones who are crazy enough to think that they can change the world, are the ones who do.”',0,0, 'Robert', new Date(2022,3,10)), 
   ]
 
   // display the quotes on the page
