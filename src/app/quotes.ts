@@ -6,6 +6,6 @@ export class Quotes {
         public quote: string,
         public upvote: number,
         public downvote: number,
-        // public submitedBy: string,
+        public submitedBy: string,
          ){}
 }
