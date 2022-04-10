@@ -1,5 +1,11 @@
-<!-- quotes page -->
 <div class='container'>
+  <!-- page heading -->
+  <div class="header">
+    <h1 class="text-center text-success">Quotes App</h1>
+    <h4>Welcome to Quotes App!</h4>
+    <p>Here, you have the opportunity to be inspired by reading some of the popular philosophical quotes from reknown authors. You can also post additional quotes to inspire others.</p> 
+  </div>
+  
   <div class='main d-flex flex-column'>
     <!-- existing quotes page -->
     <div class='quotes d-flex flex-row'>
@@ -8,13 +14,12 @@
           <div class="card-body">
             <h5 class="card-title">{{quote.author}}</h5>
             <p class="card-text">{{quote.quote}}</p>
-            <!-- <span class="row">Submited By:<p>{{quote.submitedBy}}</p></span> -->
             <span>Submitted by {{quote.submitedBy}} <b>{{quote.submissionDate|timePassed}} day(s) ago</b>.</span> <br> <br>
             <span class="rows">
-              <a class="pr-5">
+              <a class="">
                 <i style='color:green'(click)='upVote(quote)' class="fa fa-thumbs-o-up"></i>{{quote.upvote}}
               </a>
-              <a class="pr-5">
+              <a class="">
                 <i style='color:red' (click)='downVote(quote)' class="fa fa-thumbs-o-down"></i>{{quote.downvote}}
               </a>
               <a>

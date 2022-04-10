@@ -1,3 +1,25 @@
+header {
+  width: 100vw;
+}
+.header h1 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.header h4,
+.header p {
+  margin-left: 40px;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+.header h4 {
+  color: blue;
+}
+
+.header p {
+  font-size: 25px;
+}
+
 .main {
   margin-top: 10px auto;
   padding: 30px;
