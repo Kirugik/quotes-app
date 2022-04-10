@@ -6,6 +6,8 @@
 }
 
 .card {
+  width: 400px;
+  height: 400px;
   background-color: #b1a296;
   box-shadow: 0 4px 17px rgba(32, 94, 187, 0.35);
   transform: translateY(-3px);

@@ -4,7 +4,7 @@
     <!-- existing quotes page -->
     <div class='quotes d-flex flex-row'>
       <div *ngFor='let quote of quotes;let delete =index' class="mb-4 d-flex align-items-stretch">
-        <div class="card mx-2" style="width: 400px; height: 300px;">
+        <div class="card mx-2">
           <div class="card-body">
             <h5 class="card-title">{{quote.author}}</h5>
             <p class="card-text">{{quote.quote}}</p>
@@ -14,10 +14,10 @@
                 <i style='color:green'(click)='upVote(quote)' class="fa fa-thumbs-o-up"></i>{{quote.upvote}}
               </a>
               <a class="pr-5">
-                <i style='color:red' (click)='downVote(quote)' class="fa fa-thumbs-down"></i>{{quote.downvote}}
+                <i style='color:red' (click)='downVote(quote)' class="fa fa-thumbs-o-down"></i>{{quote.downvote}}
               </a>
               <a>
-                <i  (click)= 'quoteDelete($event,delete)' style='color:red'  class="fa fa-trash"></i>
+                <i  (click)= 'quoteDelete($event,delete)' style='color:red'  class="fa fa-trash-o"></i>
               </a>
             </span>
           </div>

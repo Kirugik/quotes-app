@@ -15,7 +15,7 @@
             </div>
 
             <!-- Quote textarea -->
-            <div class="form-group mt-5">
+            <div class="form-group mt-4">
                 <label for="quote">Quote</label>
                 <textarea [(ngModel)]="newQuote.quote" class="form-control" id="quote" rows="4" name="quote" placeholder="Write quote" #quote='ngModel' required></textarea>
                 <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
@@ -24,7 +24,7 @@
             </div>
 
             <!-- Publisher of the quote -->
-            <div class="form-group">
+            <div class="form-group mt-4">
                 <label for="publisher">Quote Posted By:</label>
                 <input [(ngModel)]="newQuote.submitedBy" class="form-control" id="publisher" rows="4" name="publisher" #publisher='ngModel' required>
                 <div [hidden]="publisher.valid || publisher.pristine" class="alert alert-danger">
