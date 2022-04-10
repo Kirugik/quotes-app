@@ -8,13 +8,15 @@ import { QuotesComponent } from './quotes/quotes/quotes.component';
 import { CreateQuoteComponent } from './create-quote/create-quote/create-quote.component';
 import { FormsModule } from '@angular/forms';
 import { HighestUpvotesDirective } from './highest-upvotes.directive';
+import { TimePassedPipe } from './time-passed.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuotesComponent,
     CreateQuoteComponent,
-    HighestUpvotesDirective
+    HighestUpvotesDirective,
+    TimePassedPipe
   ],
   imports: [
     BrowserModule,
